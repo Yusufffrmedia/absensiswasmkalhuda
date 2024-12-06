@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absensi Siswa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Absensi Siswa</h1>
+        <form id="absensiForm" enctype="multipart/form-data" method="POST">
+            <input type="text" name="nama" id="nama" placeholder="Nama Siswa" required>
+            <input type="text" name="kelas" id="kelas" placeholder="Kelas" required>
+            <input type="file" name="foto" id="foto" accept="image/*" required>
+            <button type="submit">Absen</button>
+        </form>
+
+        <h2>Data Absensi</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>Kelas</th>
+                    <th>Foto</th>
+                    <th>Tanggal</th>
+                </tr>
+            </thead>
+            <tbody id="absensiTable">
+                <!-- Data siswa akan muncul di sini -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
